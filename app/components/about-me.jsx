@@ -1,7 +1,7 @@
 import React, {useId} from 'react'
 import Skills from './skills'
 
-const AboutMe = ({data}) => {
+const AboutMe = ({data, skills}) => {
     const {title, body} = data
     const id = useId()
 
@@ -12,7 +12,7 @@ const AboutMe = ({data}) => {
             <p key={`${id}_${i}`} className='mb-6'>{item}</p>
         ))}
         
-        <Skills />
+        <Skills data={skills} />
     </section>
   )
 }

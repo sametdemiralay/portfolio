@@ -1,11 +1,11 @@
 import React from 'react'
 import AboutMe from './components/about-me'
-import {aboutMe} from '../data/page-data'
+import {aboutMe, skills} from '../data/page-data'
 
 const page = () => {
   return (
     <div>
-      <AboutMe data={aboutMe} />
+      <AboutMe data={aboutMe} skills={skills} />
     </div>
   )
 }
